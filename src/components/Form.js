@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import classes from "./SignUp.module.css";
 import {useDispatch} from "react-redux";
 import {getAuth} from 'firebase/auth'
-const SignUp = ({title, handleClick}) => {
+const SignUpForm = ({title, handleClick}) => {
 
     const [email, setEmail] = useState('');
     const [pass, setPass]  = useState('')
@@ -39,4 +39,4 @@ const SignUp = ({title, handleClick}) => {
     )
 }
 
-export default SignUp;
+export default SignUpForm

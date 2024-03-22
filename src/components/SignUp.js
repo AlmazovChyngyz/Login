@@ -1,10 +1,8 @@
 import {setUser} from "../store/slice/userSlice";
+import Form from "./Form";
+import {useDispatch} from "react-redux";
+import {getAuth, createUserWithEmailAndPassword} from "firebase/auth";
 
-const {useState} = require("react")
-const {useDispatch} = require ("react-redux");
-const {getAuth, createUserWithEmailAndPassword} = require ("firebase/auth");
-import SignUpForm from "../pages/signUp/SignUpForm";
-import {Form} from "react-router-dom";
 
 
 const SignUp =() => {
